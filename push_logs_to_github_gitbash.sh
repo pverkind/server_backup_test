@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "test"
+
 set -euo pipefail
 
 # ----------------------------
