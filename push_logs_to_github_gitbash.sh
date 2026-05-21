@@ -54,7 +54,7 @@ fi
 
 while IFS= read -r -d '' file; do
     git add "$file"
-done < <(find . -type f -path "./newserver/*.log" -o -path "./newserver/*.sh" -o -path "./*.sh" -print0)
+done < <(find . -type f \( -path "./newserver/*.log" -o -path "./newserver/*.sh" -o -path "./*.sh" \) -print0)
 
 
 # ----------------------------
